@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G3deon 4 Enterprises | Portafolio</title>
+  <style>
+    :root {
+      --bg-color: #0f0f17;
+      --card-bg: #1a1a24;
+      --accent: #87bfff; /* Azul pantone pálido */
+      --accent-2: #b6a0ff; /* Lila suave */
+      --text-main: #e5e5f0;
+      --text-secondary: #9a9ab3;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2em;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3em;
+      animation: fadeIn 1s ease;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p {
+      color: var(--text-secondary);
+      font-size: 1.1em;
+      margin-top: 0.5em;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2em;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .project {
+      background-color: var(--card-bg);
+      padding: 1.8em;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(135, 191, 255, 0.05);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(135, 191, 255, 0.1);
+      animation: fadeUp 0.6s ease both;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(182, 160, 255, 0.15);
+      border-color: var(--accent-2);
+    }
+
+    .project h2 {
+      font-size: 1.3em;
+      margin-bottom: 0.5em;
+      color: var(--accent);
+    }
+
+    .project p {
+      font-size: 0.95em;
+      color: var(--text-secondary);
+      margin-bottom: 1em;
+    }
+
+    .project a {
+      color: var(--accent-2);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .project a:hover {
+      color: var(--accent);
+    }
+
+    footer {
+      margin-top: 4em;
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>G3deon 4 Enterprises</h1>
+    <p>Innovación digital y desarrollo web.</p>
+  </header>
+
+  <section class="projects">
+    <div class="project">
+      <h2>Talentix</h2>
+      <p>Plataforma moderna para gestión de talento y recursos humanos.</p>
+      <a href="https://www.talentix.dev/" target="_blank">Ver proyecto →</a>
+    </div>
+
+    <div class="project">
+      <h2>Jamcob Electric</h2>
+      <p>Soluciones eléctricas profesionales con enfoque en tecnología y seguridad.</p>
+      <a href="https://www.jamcobelectric.com/" target="_blank">Ver proyecto →</a>
+    </div>
+
+    <div class="project">
+      <h2>Exentry</h2>
+      <p>Sistema empresarial de automatización y control para empresas dominicanas.</p>
+      <a href="https://www.exentry.com.do/" target="_blank">Ver proyecto →</a>
+    </div>
+
+    <div class="project">
+      <h2>Pomaray</h2>
+      <p>Plataforma educativa moderna para instituciones académicas innovadoras.</p>
+      <a href="https://www.pomaray.edu.do/" target="_blank">Ver proyecto →</a>
+    </div>
+
+    <div class="project">
+      <h2>Tecnoup</h2>
+      <p>Agencia tecnológica enfocada en innovación digital y desarrollo web.</p>
+      <a href="https://tecnoup.vercel.app/" target="_blank">Ver proyecto →</a>
+    </div>
+
+    <div class="project">
+      <h2>IDIVAS</h2>
+      <p>Instituto de innovación y desarrollo de valores aplicados al éxito profesional.</p>
+      <a href="https://idivas.vercel.app/" target="_blank">Ver proyecto →</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 G3deon 4 Enterprises — Creado con visión futurista 🚀</p>
+  </footer>
+
+</body>
+</html>
